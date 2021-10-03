@@ -34,9 +34,8 @@ public class HomeWork1 {
      * Метод должен вернуть 10
      */
     public static int max(int a1, int b1) {
-        return (a1 > b1) ? a1 : b1;
-
-
+       return a1 > b1 ? a1 : b1;
+       // return Math.max(a1, b1);
     }
 
     /**
@@ -56,8 +55,9 @@ public class HomeWork1 {
      **/
     public static int max(int[] array) {
         int maximum = array[0];
-        for (int i = 0; i < array.length; i++)
+        for (int i = 0; i < array.length; i++) {
             if (maximum < array[i]) maximum = array[i];
+        }
         return maximum;
     }
 
