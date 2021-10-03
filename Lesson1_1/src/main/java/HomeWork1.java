@@ -4,7 +4,7 @@ public class HomeWork1 {
         System.out.println(sum(5, 10));
         System.out.println(sum(Integer.MAX_VALUE, Integer.MAX_VALUE));
         System.out.println(max(7, 10));
-        System.out.println(average(new int[]{0, -2, 3, -1, 5}));
+        System.out.println(average());
         System.out.println(max(new int[]{1, 2, 3, 4, 5, 87, 99}));
         System.out.println(calculateHypotenuse(12,16));
     }
@@ -46,7 +46,7 @@ public class HomeWork1 {
      * array = {1,2,3,4,5}
      * Метод должен return 3.0
      */
-    public static double average(int[] array) {
+    public static double average() {
        return 0;
     }
 
@@ -55,8 +55,8 @@ public class HomeWork1 {
      **/
     public static int max(int[] array) {
         int maximum = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (maximum < array[i]) maximum = array[i];
+        for (int j : array) {
+            if (maximum < j) maximum = j;
         }
         return maximum;
     }
