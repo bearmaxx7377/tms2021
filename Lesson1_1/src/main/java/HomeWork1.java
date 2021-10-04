@@ -1,7 +1,7 @@
 public class HomeWork1 {
     public static void main(String[] args) {
         //Некоторые тесты для проверки задач.
-        System.out.println(sum(5, 10));
+        System.out.println(sum(10, 5));
         System.out.println(sum(Integer.MAX_VALUE, Integer.MAX_VALUE));
         System.out.println(max(7, 10));
         System.out.println(average(new int[]{1, 2, 3, 4, 5}));
@@ -14,7 +14,11 @@ public class HomeWork1 {
      * 2. Дополнительно: сделать проверку если сумма a и b больше чем максимальное значение int то вернуть -1
      **/
     public static int sum(int a, int b) {
-      return a+b;
+      return a + b; // - метод нахождения суммы двух чисел
+       // if (a != b)
+        //   return a > b ? a : b;
+        //else
+        //  return -1;
     }
 
     /**
@@ -51,8 +55,8 @@ public class HomeWork1 {
         for (int value : array) {
             sum += value;
         }
-        return (double) sum / array.length;
-        //return sum;
+        return (double) sum / array.length; // - это для нахождения среднего значения массива
+        //return sum;  - это для нахождения суммы массива
     }
 
     /**
@@ -63,7 +67,7 @@ public class HomeWork1 {
         for (int i = 0; i < array.length; i++) {
             if (maximum < array[i]) maximum = array[i];
         }
-        return maximum;
+        return maximum; // - это для нахождения максимального элемента массива
     }
 
     /**
@@ -80,6 +84,6 @@ public class HomeWork1 {
      * return 20
      */
     public static double calculateHypotenuse(int a3, int b3) {
-       return Math.sqrt(a3*a3 + b3*b3);
+       return Math.sqrt(a3*a3 + b3*b3); // - это для нахождения "квадратов" по Пифагору
     }
 }
