@@ -1,5 +1,10 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
+
 public class HomeWork2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //Некоторые тесты для проверки задач. Можно также написать свои тесты.
         printArray();
         System.out.println(operation(1));
@@ -22,6 +27,13 @@ public class HomeWork2 {
      */
     private static void printArray() {
         // тут пишем логику
+        System.out.println("Случайные числа массива: ");
+        Random random = new Random();
+        int[] array = new int[6];
+        for (int i = 0; i < 5; i++) {
+            array[i] = random.nextInt(50);
+            System.out.println(array[i]);
+        }
     }
 
     /**
@@ -31,9 +43,23 @@ public class HomeWork2 {
      * - if number равно 0 , то замените значение number на 10
      * вернуть number после выполнения операций
      */
-    public static int operation(int number) {
+    public static int operation(int number) throws IOException {
         // тут пишем логику
-        return 0;
+        System.out.print("Введите число: ");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int a = Integer.parseInt(reader.readLine());
+        if (a > 0) {
+            a = a + 1;
+        }
+//        System.out.println("Результат: "  + a);
+        if (a < 0) {
+            a = a - 2;
+        }
+//        System.out.println("Результат: "  + a);
+        if (a == 0) {
+            a = 10;
+        }
+        return a;
     }
 
     /**
@@ -43,7 +69,15 @@ public class HomeWork2 {
      */
     public static int calculateCountOfOddElementsInMatrix(int[] ints) {
         // тут пишем логику
-        return 0;
+        System.out.print("Нечетные элемены массива: ");
+        int[] array = {1, 2, 3, 4, 5, 6};
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i]);
+//             return (array[1]);
+            }
+        }
+        return (array[0]);
     }
 
     /**
@@ -57,6 +91,38 @@ public class HomeWork2 {
      */
     public static void countDevs(int count) {
         // тут пишем логику
+        System.out.println("_COUNT_ программистов:");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        System.out.println("Введите число: ");
+        int[] prog = new int[]{11, 21, 50, 1, 33};
+        System.out.println(prog[0] + " " + declension(prog[0]));
+        System.out.println(prog[1] + " " + declension(prog[1]));
+        System.out.println(prog[2] + " " + declension(prog[2]));
+        System.out.println(prog[3] + " " + declension(prog[3]));
+        System.out.println(prog[4] + " " + declension(prog[4]));
+    }
+
+    public static String declension(int count) {
+        String one = "программист";
+        String two = "программиста";
+        String five = "программистов";
+
+        if (count > 100)
+            count %= 100;
+
+        if (count > 20)
+            count %= 10;
+
+        switch (count) {
+            case 1:
+                return one;
+            case 2:
+            case 3:
+            case 4:
+                return two;
+            default:
+                return five;
+        }
     }
 
     /**
@@ -74,6 +140,21 @@ public class HomeWork2 {
      */
     public static void calculateSumOfDiagonalElements() {
         //пишем логику и выводим результат используя System.out.println
+        System.out.println("Случайные числа: ");
+        int i = 5;
+        int j = 5;
+        int sum = 0;
+        int[][] mass = new int[i][j];
+        Random random = new Random();
+        for (i = 0; i < mass.length; i++) {
+            for (j = 0; j < mass.length; j++) {
+                mass[i][j] = (int) random.nextInt(69);
+//                sum += mass[i][mass.length - 1 - i];
+                System.out.print(mass[i][j] + "  ");
+            }
+            System.out.println();
+        }
+        System.out.print("Сумма диагонали: " + sum);
     }
 
     /**
