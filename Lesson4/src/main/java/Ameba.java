@@ -7,7 +7,7 @@ public class Ameba {
         int x = scanner.nextInt(); // кол-во часов
         int y = 2; // кол-во амёб в 3 часа
         for (int i = 1; i < x / 3; i++) {
-            y = y * 2;
+            y = y * 2; // увеличение амёб
         }
         System.out.println("За " + x + " часа(ов), получится " + y + " амёб.");
     }
