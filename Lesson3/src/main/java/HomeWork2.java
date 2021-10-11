@@ -93,7 +93,7 @@ public class HomeWork2 {
         // тут пишем логику
         System.out.println("_COUNT_ программистов:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.println("Введите число: ");
+//      System.out.println("Введите число: ");
         int[] prog = new int[]{11, 21, 50, 1, 33};
         System.out.println(prog[0] + " " + declension(prog[0]));
         System.out.println(prog[1] + " " + declension(prog[1]));
@@ -133,6 +133,17 @@ public class HomeWork2 {
      */
     public static void foobar(int number) {
         // тут пишем логику
+        int max = 3;
+        for (int i = 1; i <= max; i++) {
+            if (i % 3 == 0) {
+                System.out.print("foo");
+            } else if (i % 5 == 0) {
+                System.out.print("bar");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("foobar");
+            } else
+                System.out.println(i);
+        }
     }
 
     /**
@@ -154,7 +165,7 @@ public class HomeWork2 {
             }
             System.out.println();
         }
-        System.out.print("Сумма диагонали: " + sum);
+        System.out.print("Сумма диагонали: " + sum); //не получается вывести сумму
     }
 
     /**
@@ -190,5 +201,19 @@ public class HomeWork2 {
      */
     public static void printPrimeNumbers() {
         // тут пишем логику
+        int n = 1000;
+        for (int i = 2; i <= n; i++) {
+            boolean a = true;
+            int q = (int) Math.sqrt(i);
+            for (int j = 2; j <= q; j++) {
+                if ((i % j) == 0) {
+                    a = false;
+                    break;
+                }
+            }
+            if (a) {
+                System.out.println(i + " простое");
+            }
+        }
     }
 }
