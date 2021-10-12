@@ -6,11 +6,11 @@ public class Nechet {
         int[] array = new int[50];
         for (int i = 0, n = 1; i < array.length; n = n + 2, i++) {
             array[i] = n;
-            System.out.print(array[i] + " ");
+            System.out.print(array[i] + " "); // вывод чисел от 1 до 99
         }
         System.out.println();
         for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+            System.out.print(array[i] + " "); // вывод чисел от 99 до 1
         }
     }
 }
