@@ -14,11 +14,10 @@ public class HomeWork1 {
      * 2. Дополнительно: сделать проверку если сумма a и b больше чем максимальное значение int то вернуть -1
      **/
     public static int sum(int a, int b) {
-      return a + b; // - метод нахождения суммы двух чисел
-       // if (a != b)
-        //   return a > b ? a : b;
-        //else
-        //  return -1;
+      if ((long)a + b > Integer.MAX_VALUE) {  // дополнительное задание
+        return -1;  // дополнительное задание
+        }
+        return a + b; // - метод нахождения суммы двух чисел
     }
 
     /**
