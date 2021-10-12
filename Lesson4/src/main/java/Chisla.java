@@ -4,7 +4,7 @@ public class Chisla {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число: ");
-        int i = scanner.nextInt();
+        int i = scanner.nextInt(); // Павел, у меня почему-то не выходит вывести ввоимое число в вывод
 //        int x = 5569;
         int cout = 0;
         while (i > 0) {
