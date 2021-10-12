@@ -55,7 +55,7 @@ public class HomeWork1 {
             sum += value;
         }
         return (double) sum / array.length; // - это для нахождения среднего значения массива
-        //return sum;  - это для нахождения суммы массива
+     // return sum;  - это для нахождения суммы массива
     }
 
     /**
