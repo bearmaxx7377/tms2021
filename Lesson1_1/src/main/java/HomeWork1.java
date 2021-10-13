@@ -64,7 +64,8 @@ public class HomeWork1 {
     public static int max(int[] array) {
         int maximum = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (maximum < array[i]) maximum = array[i];
+            if (maximum < array[i])
+                maximum = array[i];
         }
         return maximum; // - это для нахождения максимального элемента массива
     }
