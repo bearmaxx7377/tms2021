@@ -6,13 +6,13 @@ public class MaxElem {
         System.out.println("Максимальный элемент в массиве: ");
         int[] array = {4, 5, 0, 23, 77, 0, 8, 9, 101, 2};
         int max = array[0];
-        for (int i : array) {
-            if (i > max) {
-                max = i;
+        for (int i = 0; i < array.length; i++) { //исправлено
+            if (array[i] > max) {
+                max = array[i];
             }
         }
         System.out.print(max); // вывод максимального элемента массива
     }
 }
 
-// пока что с заменой запутался
+// С ЗАМЕНОЙ "НОЛЯ" НА МАКСИМАЛЬНОЕ ЗНАЧЕНИЕ, ПОКА НЕ СМОГ РАЗОБРАТЬСЯ
