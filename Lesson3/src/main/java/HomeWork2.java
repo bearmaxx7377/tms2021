@@ -30,7 +30,7 @@ public class HomeWork2 {
         System.out.println("Случайные числа массива: ");
         Random random = new Random();
         int[] array = new int[6];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(50);
             System.out.println(array[i]);
         }
@@ -52,11 +52,11 @@ public class HomeWork2 {
             a = a + 1;
         }
 //        System.out.println("Результат: "  + a);
-        if (a < 0) {
+        else if (a < 0) {
             a = a - 2;
         }
 //        System.out.println("Результат: "  + a);
-        if (a == 0) {
+        else if (a == 0) {
             a = 10;
         }
         return a;
@@ -71,13 +71,15 @@ public class HomeWork2 {
         // тут пишем логику
         System.out.print("Нечетные элемены массива: ");
         int[] array = {1, 2, 3, 4, 5, 6};
+        int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                System.out.print(array[i]);
-//             return (array[1]);
+                count++;
+                System.out.print(array[i] + " ");
             }
         }
-        return (array[0]);
+        System.out.print("Количество чисел = ");
+        return count;
     }
 
     /**
@@ -105,14 +107,14 @@ public class HomeWork2 {
     public static String declension(int count) {
         String one = "программист";
         String two = "программиста";
-        String five = "программистов";
+        String many = "программистов";
 
-        if (count > 100)
+        if (count > 100) {
             count %= 100;
-
-        if (count > 20)
+        }
+        if (count > 20) {
             count %= 10;
-
+        }
         switch (count) {
             case 1:
                 return one;
@@ -121,7 +123,7 @@ public class HomeWork2 {
             case 4:
                 return two;
             default:
-                return five;
+                return many;
         }
     }
 
@@ -206,7 +208,8 @@ public class HomeWork2 {
             boolean a = true;
             int q = (int) Math.sqrt(i);
             for (int j = 2; j <= q; j++) {
-                if ((i % j) == 0) {
+                if (i % j == 0) ;
+                {
                     a = false;
                     break;
                 }
