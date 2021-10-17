@@ -1,9 +1,12 @@
 package com.home.model;
 
 public class Computer {
-    String processor;
-    String ram;
-    String hardDrive;
-    String resurs;
+   public String processor;
+   public int ram;
+   public int hardDrive;
+   public String resurs;
 
+   public Computer() {
+      System.out.println("Вы попали в конструктор 'Computer'");
+   }
 }
