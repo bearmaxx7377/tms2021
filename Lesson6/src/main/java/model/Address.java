@@ -7,12 +7,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-
 public class Address {
-    private String sity;
-//    private String country;
+    private String city;
+    private String country;
 
-    public Address(String sity) {
-        this.sity = sity;
+    public Address(String city) {
+        this.city = city;
+        this.country = country;
     }
 }
