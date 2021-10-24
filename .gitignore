@@ -4,7 +4,7 @@
 
 # Log file
 *.log
-.iml
+*.iml
 
 # BlueJ files
 *.ctxt
