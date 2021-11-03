@@ -10,11 +10,6 @@ public class Cargo extends Ground {
 
     private int tonnage;   // грузоподъемность (т)
 
-    public Cargo(int power, int maxSpeed, int carWeight, String carBrand, int tonnage) {
-        super(power, maxSpeed, carWeight, carBrand);
-        this.tonnage = tonnage;
-    }
-
     @Override
     public String toString() {
         return "Грузовой: " +
