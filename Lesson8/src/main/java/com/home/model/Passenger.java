@@ -11,12 +11,6 @@ public class Passenger extends Ground {
     private String typeBody;         // тип кузова
     private int numberPassengers;    // количество пассажиров
 
-    public Passenger(int power, int maxSpeed, int carWeight, String carBrand, String typeBody, int numberPassengers) {
-        super(power, maxSpeed, carWeight, carBrand);
-        this.typeBody = typeBody;
-        this.numberPassengers = numberPassengers;
-    }
-
     @Override
     public String toString() {
         return "Легковой: " +
@@ -35,7 +29,6 @@ public class Passenger extends Ground {
         double route = getMaxSpeed() * time;
         System.out.println("За время " + time + " ч, автомобиль " + getCarBrand() + " двигаясь с максимальной скоростью " + getMaxSpeed() +
                 " км/ч, проедет " + route + " км " + " и израсходует " + calculFuelUse(route) + " литров топлива.");
-
     }
 
     private double calculFuelUse(double route) {
