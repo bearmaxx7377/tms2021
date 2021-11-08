@@ -55,7 +55,7 @@ public class Run {
         } else if (robot2.getPrice() > robot1.getPrice() && robot2.getPrice() > robot3.getPrice()) {
             System.out.println("Вторая сборка робота самая дорогая, его цена: = " + robot2.getPrice());
         } else {
-            System.out.println("Вторая сборка робота самая дорогая, его цена: = " + robot3.getPrice());
+            System.out.println("Третья сборка робота самая дорогая, его цена: = " + robot3.getPrice());
         }
     }
 }
