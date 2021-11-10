@@ -8,6 +8,6 @@ public class SamsungHead implements IHead {
 
     @Override
     public int getPrice() {
-        return 450;
+        return 0;
     }
 }

@@ -8,6 +8,6 @@ public class SamsungLegs implements ILeg {
 
     @Override
     public int getPrice() {
-        return 100;
+        return 0;
     }
 }

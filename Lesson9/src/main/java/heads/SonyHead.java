@@ -8,6 +8,6 @@ public class SonyHead implements IHead {
 
     @Override
     public int getPrice() {
-        return 360;
+        return 0;
     }
 }

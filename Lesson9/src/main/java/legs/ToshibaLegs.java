@@ -8,6 +8,6 @@ public class ToshibaLegs implements ILeg {
 
     @Override
     public int getPrice() {
-        return 80;
+        return 0;
     }
 }

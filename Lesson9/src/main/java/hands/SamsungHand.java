@@ -8,6 +8,6 @@ public class SamsungHand implements IHand {
 
     @Override
     public int getPrice() {
-        return 300;
+        return 0;
     }
 }

@@ -8,6 +8,6 @@ public class ToshibaHead implements IHead {
 
     @Override
     public int getPrice() {
-        return 280;
+        return 0;
     }
 }

@@ -8,6 +8,6 @@ public class SonyHand implements IHand {
 
     @Override
     public int getPrice() {
-        return 270;
+        return 0;
     }
 }

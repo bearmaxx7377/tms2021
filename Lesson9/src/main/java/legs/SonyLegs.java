@@ -8,6 +8,6 @@ public class SonyLegs implements ILeg {
 
     @Override
     public int getPrice() {
-        return 170;
+        return 0;
     }
 }
