@@ -1,14 +1,14 @@
-import jackets.Jacket;
-import pantss.Pants;
-import shoess.Shoes;
+import jackets.IJacket;
+import pantss.IPants;
+import shoess.IShoes;
 
 public class Person {
     private String name; // имя
-    private Jacket jacket; // куртка
-    private Pants pants; // штаны
-    private Shoes shoes; // обувь
+    private IJacket jacket; // куртка
+    private IPants pants; // штаны
+    private IShoes shoes; // обувь
 
-    public Person(String name, Jacket jacket, Pants pants, Shoes shoes) {
+    public Person(String name, IJacket jacket, IPants pants, IShoes shoes) {
         this.name = name;
         this.jacket = jacket;
         this.pants = pants;
@@ -23,27 +23,27 @@ public class Person {
         this.name = name;
     }
 
-    public Jacket getJacket() {
+    public IJacket getJacket() {
         return jacket;
     }
 
-    public void setJacket(Jacket jacket) {
+    public void setJacket(IJacket jacket) {
         this.jacket = jacket;
     }
 
-    public Pants getPants() {
+    public IPants getPants() {
         return pants;
     }
 
-    public void setPants(Pants pants) {
+    public void setPants(IPants pants) {
         this.pants = pants;
     }
 
-    public Shoes getShoes() {
+    public IShoes getShoes() {
         return shoes;
     }
 
-    public void setShoes(Shoes shoes) {
+    public void setShoes(IShoes shoes) {
         this.shoes = shoes;
     }
 
@@ -54,8 +54,8 @@ public class Person {
     }
 
     public void throwOffClothes() { // снять одежду
-        jacket.throwOff();
-        pants.throwOff();
-        shoes.throwOff();
+        jacket.takeOff();
+        pants.takeOff();
+        shoes.takeOff();
     }
 }

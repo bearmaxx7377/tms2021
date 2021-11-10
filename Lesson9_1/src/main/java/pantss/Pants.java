@@ -9,11 +9,11 @@ public class Pants implements IPants {
 
     @Override
     public void putOn() {
-        System.out.println("!Надеть брюки!");
+        System.out.println("!Надел брюки " + size + " размера!");
     }
 
     @Override
-    public void throwOff() {
-        System.out.println("!Снять брюки!");
+    public void takeOff() {
+        System.out.println("!Снял брюки " + size + " размера!");
     }
 }

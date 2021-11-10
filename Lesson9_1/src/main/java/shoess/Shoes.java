@@ -9,11 +9,11 @@ public class Shoes implements IShoes {
 
     @Override
     public void putOn() {
-        System.out.println("!Одеть обувь!");
+        System.out.println("!Одел обувь " + shoeSize + " размера!");
     }
 
     @Override
-    public void throwOff() {
-        System.out.println("!Снять обувь!");
+    public void takeOff() {
+        System.out.println("!Снял обувь " + shoeSize + " размера!");
     }
 }

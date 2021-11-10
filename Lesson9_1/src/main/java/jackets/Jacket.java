@@ -17,11 +17,11 @@ public class Jacket implements IJacket {
 
     @Override
     public void putOn() {
-        System.out.println("!Надеть куртку!");
+        System.out.println("!Надел куртку " + color + " цвета!");
     }
 
     @Override
-    public void throwOff() {
-        System.out.println("!Снять куртку!");
+    public void takeOff() {
+        System.out.println("!Снял куртку " + color + " цвета!");
     }
 }
